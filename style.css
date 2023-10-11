@@ -1,12 +1,111 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+@import url("./global.css");
+@import url("./variable.css");
+
+/* -----main container---- */
+.main-container {
+	width: 1400px;
+	height: 890px;
+	margin: auto;
+	background: var(--bg-dark);
+
+	padding: 65px 214px;
 }
-html {
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+
+/* -----header---- */
+.main-container header {
+	width: 972px;
+	height: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-body {
-	font-family: "DM Sans", sans-serif;
+header ul {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+header ul li:first-child {
+	opacity: 0.3;
+}
+
+
+/* -----body container---- */
+.main-container .body-container {
+	margin-top: 82px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* ------content---- */
+.body-container .content {
+	width: 427px;
+	height: 496px;
+}
+.content .content-details {
+	width: 363px;
+	margin-top: 24px;
+	margin-bottom: 45px;
+}
+.content button {
+	width: 157px;
+	height: 50px;
+}
+
+
+/* ------signup form------ */
+.body-container .signup-form {
+	background: var(--bg-light);
+	color: var(--color-text);
+	border-radius: 10px;
+	width: 470px;
+	height: 600px;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.signup-form .form-title {
+	margin-top: 48px;
+	margin-bottom: 34px;
+	color: var(--color-heading);
+}
+.signup-form .form-body {
+	width: 330px;
+}
+.signup-form .checkbox-container {
+	/* margin: 8px 0; */
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.checkbox-container input[type="checkbox"] {    
+    width: 24px;
+    height: 24px;
+	border: 2px solid var(--color-grey);
+    cursor: pointer;
+    accent-color: var(--action-primary);
+}
+.signup-form .sign-in,
+.twitter {
+	width: 100%;
+	height: 50px;
+	margin: 15px 0;
+}
+.signup-form .sign-in {
+	background-color: var(--action-secondary);
+}
+.signup-form .twitter {
+	background-color: var(--twitter);
+}
+.signup-form p {
+    margin-top: 15px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 28px;
+}
+.signup-form p span{
+    color: var(--action-primary);
 }

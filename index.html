@@ -5,54 +5,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign-up</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Open+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
 	</head>
 	<body>
 		<!-- main container -->
 		<div class="main-container">
 			<!-- header -->
 			<header>
-				<div class="company-name"><h3>Startup 3</h3></div>
-				<nav>
-					<p class="item">Overview</p>
-					<p class="item">Prices</p>
-					<p class="item">Blog</p>
-					<p class="item">Feedback</p>
-					<button class="purchase">purchase</button>
-				</nav>
+				<div class="company-name"><h4>Startup 3</h4></div>
+				<ul>
+					<li class="item">Overview</li>
+					<li class="item">Prices</li>
+					<li class="item">Blog</li>
+					<li class="item">Feedback</li>
+					<button class="purchase btn">Purchase</button>
+				</ul>
 			</header>
 
 			<!-- body-container -->
 			<div class="body-container">
 				<!-- content -->
 				<div class="content">
-					<h1 class="content-title">Generate Awesome Web Pages</h1>
-					<p class="content-details">
-						The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can
-						use as is or you can add new blocks.
-					</p>
-					<button class="learn-more">Learn More</button>
+					<h2 class="content-title">Generate Awesome Web Pages</h2>
+					<div class="content-details">
+						<h5>
+							The most important part of the Startup is the samples. The samples form a set of 25 usable pages you
+							can use as is or you can add new blocks.
+						</h5>
+					</div>
+					<button class="learn-more btn">Learn More</button>
 				</div>
 
 				<!-- signup-form -->
-				<div class="signup-form">
-					<form>
-						<h2 class="form-title">Sign Up Now</h2>
-						<input type="email" placeholder="Your email" class="email" />
-						<input type="password" placeholder="Your password" class="password" />
-						<input type="radio" checked id="agree-conditions" />
-						<label for="agree-conditions">I agree to the Terms of Service.</label>
-						<button class="sign-in">Sign In</button>
+				<!-- <div > -->
+				<form class="signup-form">
+					<h3 class="form-title">Sign Up Now</h3>
+					<div class="form-body">
+						<input class="email input" type="email" placeholder="Your email" />
+						<input class="password input" type="password" placeholder="Your password" />
+						<div class="checkbox-container">
+							<input type="checkbox" checked id="t-and-c" />
+							<label for="t-and-c">I agree to the Terms of Service.</label>
+						</div>
+
+						<button class="sign-in btn">Sign In</button>
 						<p>----------or----------</p>
-						<button class="twitter">Login via Twitter</button>
-						<h5>Do you have an Account? <span class="">Sign In</span></h5>
-					</form>
-				</div>
+						<button class="twitter btn">Login via Twitter</button>
+						<p>Do you have an Account? <span class="">Sign In</span></p>
+					</div>
+				</form>
+				<!-- </div> -->
 			</div>
 		</div>
 	</body>
