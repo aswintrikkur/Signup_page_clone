@@ -5,12 +5,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign-up</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!-- main container -->
 		<div class="main-container">
+			<!-- header -->
+			<header>
+				<div class="company-name"><h3>Startup 3</h3></div>
+				<nav>
+					<p class="item">Overview</p>
+					<p class="item">Prices</p>
+					<p class="item">Blog</p>
+					<p class="item">Feedback</p>
+					<button class="purchase">purchase</button>
+				</nav>
+			</header>
 
-            
-        </div>
+			<!-- body-container -->
+			<div class="body-container">
+				<!-- content -->
+				<div class="content">
+					<h1 class="content-title">Generate Awesome Web Pages</h1>
+					<p class="content-details">
+						The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can
+						use as is or you can add new blocks.
+					</p>
+					<button class="learn-more">Learn More</button>
+				</div>
+
+				<!-- signup-form -->
+				<div class="signup-form">
+					<form>
+						<h2 class="form-title">Sign Up Now</h2>
+						<input type="email" placeholder="Your email" class="email" />
+						<input type="password" placeholder="Your password" class="password" />
+						<input type="radio" checked id="agree-conditions" />
+						<label for="agree-conditions">I agree to the Terms of Service.</label>
+						<button class="sign-in">Sign In</button>
+						<p>----------or----------</p>
+						<button class="twitter">Login via Twitter</button>
+						<h5>Do you have an Account? <span class="">Sign In</span></h5>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
