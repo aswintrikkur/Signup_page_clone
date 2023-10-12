@@ -176,6 +176,7 @@ header ul li:first-child {
 	.main-container {
 		padding: 35px 0;
 		padding-inline: clamp(10px, 10%, 50px);
+        padding-bottom: 60px;
 	}
 
 	/* -----header---- */
@@ -204,7 +205,7 @@ header ul li:first-child {
 
 	/* ------signup form------ */
 	.body-container .signup-form {
-		margin-top: 100px;
+		margin-top: 60px;
 		scale: 1.06;
 		width: clamp(200px, 90%, 430px);
 		min-width: 200px;
